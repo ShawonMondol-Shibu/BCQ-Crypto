@@ -5,13 +5,13 @@ import Image from 'next/image'
 
 export default function About() {
   return (
-    <main>
-       <Card>
-        <CardContent className='flex items-center justify-center gap-20'>
-            <div className='flex-1/2'>
+    <main className='mt-20'>
+       <Card className='border-none shadow-none'>
+        <CardContent className='grid grid-cols-2 items-center justify-center m-auto gap-10'>
                 <Image src={'/images/globe.png'} alt='about section globe section' width={569} height={569}/>
-            </div>
-            <div className='flex-1/2 space-y-5'>
+            {/* <div className=''>
+            </div> */}
+            <div className='space-y-8 w-xl'>
 
             <p className='text-base font-semibold text-orange-400'>YOUR GATEWAY TO THE GLOBAL ECONOMY</p>
             <h3 className='text-5xl font-bold'>BCQ crypto lending, trading, and custody for worldwide</h3>
