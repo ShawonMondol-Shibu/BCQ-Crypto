@@ -1,4 +1,4 @@
-import navType from "@/types/type";
+import {navType} from "@/types/type";
 import Link from "next/link";
 import React from "react";
 import { Button } from "../ui/button";

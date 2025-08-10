@@ -1,0 +1,60 @@
+import React from "react";
+import { Button } from "../ui/button";
+import { CloudCheck } from "lucide-react";
+import { FaAward, FaUserShield } from "react-icons/fa";
+import { serviceType } from "@/types/type";
+import { GiTrade } from "react-icons/gi";
+
+export default function Services() {
+  const services: serviceType[] = [
+    {
+      icon: CloudCheck,
+      name: "Secure storage",
+      desc: "We store the vast majority of the digital assets in secure offline storage.",
+    },
+    {
+      icon: FaUserShield,
+      name: "Protected by insurance",
+      desc: "Cryptocurrency stored on our servers is covered by our insurance policy.",
+    },
+    {
+      icon: FaAward,
+      name: "Industry best practices",
+      desc: "Besnik crypto supports a variety of the most popular digital crypto currencies.",
+    },
+    {
+      icon: GiTrade,
+      name: "Trade Assets",
+      desc: "Discover new and innovative crypto assets with over 200 spot trading pairs and 25 margin.",
+    },
+  ];
+  return (
+    <main className="grid grid-cols-2 items-center justify-center gap-10 m-auto mt-20">
+      <section className="space-y-8">
+        <h3 className="text-5xl font-bold text-zinc-800">
+          We make crypto easy.
+        </h3>
+        <p className="text-base font-normal text-zinc-500">
+          Specific cryptocurrencies work and get a bit of crypto to try out for
+          yourself. Here are a few reasons why you should choose besnik crypto
+        </p>
+        <Button variant={"default"} size={"lg"}>
+          Learn more
+        </Button>
+      </section>
+      <section className="grid grid-cols-2 items-center gap-10 flex-1/2">
+        {services.map((service: serviceType, i: number) => (
+          <div key={i} className="flex items-start w-72 gap-2">
+            <div className="text-orange-400">
+              <service.icon size={30} />
+            </div>
+            <hgroup className="space-y-4">
+              <h4>{service.name}</h4>
+              <p>{service.desc}</p>
+            </hgroup>
+          </div>
+        ))}
+      </section>
+    </main>
+  );
+}
