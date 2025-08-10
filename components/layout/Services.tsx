@@ -29,8 +29,8 @@ export default function Services() {
     },
   ];
   return (
-    <main className="grid grid-cols-2 items-center justify-center gap-10 m-auto mt-20">
-      <section className="space-y-8">
+    <main className="grid grid-cols-2 items-center justify-center gap-10 m-auto my-20">
+      <section className="space-y-8 w-lg" >
         <h3 className="text-5xl font-bold text-zinc-800">
           We make crypto easy.
         </h3>
@@ -42,15 +42,15 @@ export default function Services() {
           Learn more
         </Button>
       </section>
-      <section className="grid grid-cols-2 items-center gap-10 flex-1/2">
+      <section className="grid grid-cols-2 items-center gap-10">
         {services.map((service: serviceType, i: number) => (
-          <div key={i} className="flex items-start w-72 gap-2">
+          <div key={i} className="flex items-start w-80 gap-2">
             <div className="text-orange-400">
               <service.icon size={30} />
             </div>
             <hgroup className="space-y-4">
-              <h4>{service.name}</h4>
-              <p>{service.desc}</p>
+              <h4 className="text-2xl font-semibold">{service.name}</h4>
+              <p className="text-">{service.desc}</p>
             </hgroup>
           </div>
         ))}
