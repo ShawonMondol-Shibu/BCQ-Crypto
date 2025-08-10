@@ -1,5 +1,6 @@
 "use client";
 import About from "@/components/layout/About";
+import Features from "@/components/layout/Features";
 import Services from "@/components/layout/Services";
 import { Button } from "@/components/ui/button";
 // import { Card, CardContent } from "@/components/ui/card";
@@ -76,6 +77,9 @@ export default function Home() {
 
       {/* Service Section */}
       <Services/>
+
+      {/* Features Section */}
+      <Features/>
     </main>
   );
 }
