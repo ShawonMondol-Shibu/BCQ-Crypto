@@ -1,6 +1,7 @@
 "use client";
+import About from "@/components/layout/About";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
+// import { Card, CardContent } from "@/components/ui/card";
 import {
   Carousel,
   CarouselContent,
@@ -67,6 +68,10 @@ export default function Home() {
           </Carousel>
         </section>
       </header>
+
+
+      {/* About section */}
+      <About/>
     </main>
   );
 }
