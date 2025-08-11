@@ -1,7 +1,7 @@
 import {navType} from "@/types/type";
 import Link from "next/link";
 import React from "react";
-import { Button } from "../ui/button";
+// import { Button } from "../ui/button";
 
 export default function Navbar() {
   const navLink: navType[] = [
