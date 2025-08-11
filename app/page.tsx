@@ -20,16 +20,16 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="container m-auto px-5">
-      <header className="flex items-center justify-center gap-20">
-        <section className="w-2xl flex-2/5 space-y-4">
+    <main className=" xl:container w-full  m-auto px-5">
+      <header className="flex xl:flex-nowrap flex-wrap-reverse items-center justify-center lg:gap-20 gap-10">
+        <section className="w-2xl flex-2/5 space-y-4 m-auto">
           <p className="font-semibold text-orange-400 text-base">
             Join the our crypto exchange
           </p>
-          <h2 className="text-7xl font-bold leading-24 text-zinc-800">
+          <h2 className="xl:text-7xl lg:text-5xl text-3xl font-bold xl:leading-24 leading-none text-zinc-800">
             Popular way to buy and sell crypto.{" "}
           </h2>
-          <p className="text-lg font-normal text">
+          <p className="lg:text-lg text-base font-normal text">
             Besnik crypto is the community-run technology powering <br /> the
             cryptocurrency, ether and thousands of decentralized <br />{" "}
             applications.
@@ -47,7 +47,7 @@ export default function Home() {
         </section>
 
         {/* Carousel */}
-        <section className="bg-primary flex-1/2 h-[90vh] w-96">
+        <section className="bg-primary flex-1/2 h-[90vh] w-96 m-auto">
           <Carousel
             opts={{
               align: "start",
@@ -61,37 +61,44 @@ export default function Home() {
           >
             <CarouselContent className="">
               {Array.from({ length: 5 }).map((_, index) => (
-                <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/2 h-[90vh] m-auto">
-                      <Image src={'/images/carousel.png'} alt="carousel image" width={500} height={1000}/>
+                <CarouselItem
+                  key={index}
+                  className="basis-full xl:basis-1/2 h-[90vh] m-auto"
+                >
+                  <Image
+                    src={"/images/carousel.png"}
+                    alt="carousel image"
+                    width={500}
+                    height={1000}
+                  />
                 </CarouselItem>
               ))}
             </CarouselContent>
             <div className=" absolute bottom-0 left-[50%] -translate-x-[50%]">
-            <CarouselPrevious />
-            <CarouselNext />
+              <CarouselPrevious />
+              <CarouselNext />
             </div>
           </Carousel>
         </section>
       </header>
 
-
       {/* About section */}
-      <About/>
+      <About />
 
       {/* Service Section */}
-      <Services/>
+      <Services />
 
       {/* Features Section */}
-      <Features/>
+      <Features />
 
       {/* Testimonials Section */}
-      <Testimonial/>
+      <Testimonial />
 
       {/* Blog Section */}
-      <Blog/>
+      <Blog />
 
       {/* Contact Section */}
-      <Contact/>
+      <Contact />
     </main>
   );
 }

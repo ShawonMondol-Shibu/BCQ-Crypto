@@ -5,10 +5,10 @@ import Image from "next/image";
 
 export default function Features() {
   return (
-    <main className="mt-20">
+    <main className="my-20">
       <Card className="border-none shadow-none">
         <CardContent className="flex flex-row-reverse flex-wrap items-center justify-between lg:gap-10 gap-4">
-          <div className="">
+          <div className="m-auto">
             <Image
               src={"/images/phone.png"}
               alt="about section globe section"
@@ -16,7 +16,7 @@ export default function Features() {
               height={569}
             />
           </div>
-          <div className="lg:space-y-8 space-y-5 w-xl">
+          <div className="lg:space-y-8 space-y-5 w-xl m-auto">
             <p className="lg:text-base text-sm font-semibold text-orange-400">
               YOUR GATEWAY TO THE GLOBAL ECONOMY
             </p>

@@ -25,10 +25,10 @@ export default function Navbar() {
         </ul>
       </div>
 
-      <div className="space-x-5">
+      {/* <div className="space-x-5">
         <Button>Login</Button>
         <Button>Sign Up</Button>
-      </div>
+      </div> */}
     </nav>
   );
 }

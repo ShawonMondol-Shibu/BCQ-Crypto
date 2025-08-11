@@ -27,12 +27,12 @@ export default function Blog() {
   ];
   return (
     <main className="my-40">
-      <div className="text-center md:w-lg space-y-4 m-auto">
+      <div className="text-center md:w-lg w-96 space-y-4 m-auto">
         <p className="text-base font-semibold text-orange-400">
           Gataway to the global economy
         </p>
 
-        <h2 className="text-5xl font-bold text-zinc-800 leading-14">
+        <h2 className="md:text-5xl text-4xl font-bold text-zinc-800 md:leading-14">
           Cryptocurrency in Every Wallet™
         </h2>
       </div>

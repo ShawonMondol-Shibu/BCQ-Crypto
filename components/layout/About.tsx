@@ -7,8 +7,8 @@ export default function About() {
   return (
     <main className="mt-20">
       <Card className="border-none shadow-none">
-        <CardContent className="flex items-center justify-between gap-10">
-          <div>
+        <CardContent className="flex lg:flex-nowrap flex-wrap items-center justify-between lg:gap-10 gap-4">
+          <div className="m-auto">
             <Image
               src={"/images/globe.png"}
               alt="about section globe section"
@@ -16,7 +16,7 @@ export default function About() {
               height={569}
             />
           </div>
-          <div className="space-y-8 w-xl ">
+          <div className="lg:space-y-8 space-y-5 w-xl m-auto">
             <p className="lg:text-base text-sm font-semibold text-orange-400">
               YOUR GATEWAY TO THE GLOBAL ECONOMY
             </p>

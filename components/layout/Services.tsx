@@ -30,8 +30,8 @@ export default function Services() {
   ];
   return (
     <main className="grid xl:grid-cols-2  items-center justify-center gap-20 m-auto my-20">
-      <section className="space-y-8 md:w-lg m-auto" >
-        <h3 className="text-5xl font-bold text-zinc-800 text-wrap">
+      <section className="space-y-8 md:w-lg m-auto md:text-justify text-center" >
+        <h3 className="lg:text-5xl text-3xl font-bold text-zinc-800 text-wrap">
           We make crypto easy.
         </h3>
         <p className="text-base font-normal text-zinc-500 text-wrap">
@@ -42,7 +42,7 @@ export default function Services() {
           Learn more
         </Button>
       </section>
-      <section className="grid md:grid-cols-2 items-center gap-10 ">
+      <section className="grid md:grid-cols-2 items-center gap-10 m-auto">
         {services.map((service: serviceType, i: number) => (
           <div key={i} className="flex items-start w-80 gap-2">
             <div className="text-orange-400">
