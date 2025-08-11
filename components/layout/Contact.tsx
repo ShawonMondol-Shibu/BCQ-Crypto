@@ -16,7 +16,7 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "../ui/textarea";
-import { toast } from "sonner";
+import { toast, Toaster } from "sonner";
 
 const formSchema = z.object({
   username: z.string().min(2, {
@@ -50,9 +50,10 @@ export default function Contact() {
       <h2 className="text-5xl font-bold text-zinc-800 leading-14 text-center w-fit m-auto">
         Get in touch
       </h2>
-      <div className="mt-10 w-lg">
+      <div className="m-auto mt-10 w-lg">
+        <Toaster richColors/>
         <Form {...form}>
-          <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
+          <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8 grid">
             <FormField
               control={form.control}
               name="username"
@@ -93,7 +94,7 @@ export default function Contact() {
                 </FormItem>
               )}
             />
-            <Button variant={'default'} size={'lg'} type="submit">Send message</Button>
+            <Button variant={'default'} size={'lg'} type="submit" className="hover:cursor-pointer">Send message</Button>
           </form>
         </Form>
       </div>
