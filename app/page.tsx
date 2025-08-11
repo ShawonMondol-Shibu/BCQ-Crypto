@@ -47,7 +47,7 @@ export default function Home() {
         </section>
 
         {/* Carousel */}
-        <section className="bg-primary flex-1/2 h-screen">
+        <section className="bg-primary flex-1/2 h-[90vh] w-96">
           <Carousel
             opts={{
               align: "start",
@@ -61,7 +61,7 @@ export default function Home() {
           >
             <CarouselContent className="">
               {Array.from({ length: 5 }).map((_, index) => (
-                <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/2 h-screen m-auto">
+                <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/2 h-[90vh] m-auto">
                       <Image src={'/images/carousel.png'} alt="carousel image" width={500} height={1000}/>
                 </CarouselItem>
               ))}

@@ -50,7 +50,7 @@ export default function Contact() {
       <h2 className="text-5xl font-bold text-zinc-800 leading-14 text-center w-fit m-auto">
         Get in touch
       </h2>
-      <div className="m-auto mt-10 w-lg">
+      <div className="m-auto mt-10 md:w-lg w-96">
         <Toaster richColors/>
         <Form {...form}>
           <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8 grid">

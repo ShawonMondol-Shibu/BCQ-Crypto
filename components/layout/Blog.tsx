@@ -37,7 +37,7 @@ export default function Blog() {
         </h2>
       </div>
 
-      <section className="flex items-center justify-evenly gap-10 mt-10">
+      <section className="flex lg:flex-nowrap flex-wrap items-center justify-evenly gap-10 mt-10">
         {blogs.map((item: blogType, i: number) => (
           <Card key={i} className="w-full max-w-sm p-0 border-none shadow-none">
             <div className="bg-foreground rounded-2xl">
