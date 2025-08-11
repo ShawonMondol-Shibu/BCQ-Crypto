@@ -26,7 +26,7 @@ export default function Blog() {
     },
   ];
   return (
-    <main className="my-20">
+    <main className="my-40">
       <div className="text-center w-lg space-y-4 m-auto">
         <p className="text-base font-semibold text-orange-400">
           Gataway to the global economy
@@ -37,7 +37,7 @@ export default function Blog() {
         </h2>
       </div>
 
-      <section className="flex items-center justify-center gap-10 mt-10">
+      <section className="flex items-center justify-evenly gap-10 mt-10">
         {blogs.map((item: blogType, i: number) => (
           <Card key={i} className="w-full max-w-sm p-0 border-none shadow-none">
             <div className="bg-foreground rounded-2xl">
