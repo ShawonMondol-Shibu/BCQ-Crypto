@@ -59,7 +59,7 @@ export default function Blog() {
                 </p>
                 <Link
                   href={item.url}
-                  className="text-base font-medium text-orange-400"
+                  className="text-base font-medium text-orange-400 border-b border-orange-400"
                 >
                   read more
                 </Link>
