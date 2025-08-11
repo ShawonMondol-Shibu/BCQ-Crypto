@@ -2,6 +2,19 @@ import Link from "next/link";
 import { Input } from "@/components/ui/input";
 
 export default function Footer() {
+  const importantLinks = [
+    { name: "About Us", url: "#" },
+    { name: "Contact Us", url: "#" },
+    { name: "Agent Contact", url: "#" },
+    { name: "Services", url: "#" },
+  ];
+  const resources = [
+    { name: "Prices", url: "#" },
+    { name: "Tax", url: "#" },
+    { name: "Blog", url: "#" },
+    { name: "Support", url: "#" },
+  ];
+
   return (
     <footer className="w-full bg-zinc-100 py-12 md:py-16 lg:py-20 text-muted-foreground m-auto">
       <div className="container grid grid-cols-1 md:grid-cols-4 gap-8 px-4 m-auto md:px-6">
@@ -23,26 +36,13 @@ export default function Footer() {
             Important links
           </h4>
           <ul className="space-y-2 text-sm">
-            <li>
-              <Link href="#" className="hover:underline">
-                About Us
-              </Link>
-            </li>
-            <li>
-              <Link href="#" className="hover:underline">
-                Contact Us
-              </Link>
-            </li>
-            <li>
-              <Link href="#" className="hover:underline">
-                Agent Contact
-              </Link>
-            </li>
-            <li>
-              <Link href="#" className="hover:underline">
-                Services
-              </Link>
-            </li>
+            {importantLinks.map((item, i: number) => (
+              <li key={i}>
+                <Link href={item.url} className="hover:underline">
+                  {item.name}
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
 
@@ -50,26 +50,13 @@ export default function Footer() {
         <div className="space-y-4">
           <h4 className="text-lg font-semibold text-foreground">Resources</h4>
           <ul className="space-y-2 text-sm">
-            <li>
-              <Link href="#" className="hover:underline">
-                Prices
-              </Link>
-            </li>
-            <li>
-              <Link href="#" className="hover:underline">
-                Tax
-              </Link>
-            </li>
-            <li>
-              <Link href="#" className="hover:underline">
-                Blog
-              </Link>
-            </li>
-            <li>
-              <Link href="#" className="hover:underline">
-                Support
-              </Link>
-            </li>
+            {resources.map((item, i: number) => (
+              <li key={i}>
+                <Link href={item.url} className="hover:underline">
+                  {item.name}
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
 
