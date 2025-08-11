@@ -8,7 +8,7 @@ export default function About() {
     <main className="mt-20">
       <Card className="border-none shadow-none">
         <CardContent className="flex items-center justify-between gap-10">
-          <div className="">
+          <div>
             <Image
               src={"/images/globe.png"}
               alt="about section globe section"
@@ -17,13 +17,13 @@ export default function About() {
             />
           </div>
           <div className="space-y-8 w-xl ">
-            <p className="text-base font-semibold text-orange-400">
+            <p className="lg:text-base text-sm font-semibold text-orange-400">
               YOUR GATEWAY TO THE GLOBAL ECONOMY
             </p>
-            <h3 className="text-5xl font-bold">
+            <h3 className="lg:text-5xl text-3xl font-bold">
               BCQ crypto lending, trading, and custody for worldwide
             </h3>
-            <p className="text-base font-normal text-zinc-500">
+            <p className="lg:text-base text-sm font-normal text-zinc-500">
               Institutional Markets is a full-stack crypto services platform
               that works worldwide with crypto-native businesses and
               institutional clients on trading, and custody solutions.

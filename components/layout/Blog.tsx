@@ -27,7 +27,7 @@ export default function Blog() {
   ];
   return (
     <main className="my-40">
-      <div className="text-center w-lg space-y-4 m-auto">
+      <div className="text-center md:w-lg space-y-4 m-auto">
         <p className="text-base font-semibold text-orange-400">
           Gataway to the global economy
         </p>

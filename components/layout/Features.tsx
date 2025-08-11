@@ -7,7 +7,7 @@ export default function Features() {
   return (
     <main className="mt-20">
       <Card className="border-none shadow-none">
-        <CardContent className="flex flex-row-reverse items-center justify-between gap-10">
+        <CardContent className="flex flex-row-reverse flex-wrap items-center justify-between lg:gap-10 gap-4">
           <div className="">
             <Image
               src={"/images/phone.png"}
@@ -16,14 +16,14 @@ export default function Features() {
               height={569}
             />
           </div>
-          <div className="space-y-8 w-xl">
-            <p className="text-base font-semibold text-orange-400">
+          <div className="lg:space-y-8 space-y-5 w-xl">
+            <p className="lg:text-base text-sm font-semibold text-orange-400">
               YOUR GATEWAY TO THE GLOBAL ECONOMY
             </p>
-            <h3 className="text-5xl font-bold">
+            <h3 className="lg:text-5xl text-3xl font-bold">
               The Easiest and Most Powerful Crypto Wallet
             </h3>
-            <p className="text-base font-normal text-zinc-500">
+            <p className="lg:text-base text-sm font-normal text-zinc-500">
               Bitcoin uses peer-to-peer technology to operate with no central authority or banks; managing transactions and the issuing of bitcoins is carried out collectively by the network. 
             </p>
 
