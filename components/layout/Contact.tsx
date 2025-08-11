@@ -46,7 +46,7 @@ export default function Contact() {
     return toast.success("Message send successfully ")
   }
   return (
-    <main>
+    <main className="my-40">
       <h2 className="text-5xl font-bold text-zinc-800 leading-14 text-center w-fit m-auto">
         Get in touch
       </h2>
