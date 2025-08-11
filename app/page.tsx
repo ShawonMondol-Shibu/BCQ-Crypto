@@ -2,6 +2,7 @@
 import About from "@/components/layout/About";
 import Features from "@/components/layout/Features";
 import Services from "@/components/layout/Services";
+import Testimonial from "@/components/layout/Testimonial";
 import { Button } from "@/components/ui/button";
 // import { Card, CardContent } from "@/components/ui/card";
 import {
@@ -80,6 +81,9 @@ export default function Home() {
 
       {/* Features Section */}
       <Features/>
+
+      {/* Testimonials Section */}
+      <Testimonial/>
     </main>
   );
 }
