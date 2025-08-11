@@ -1,5 +1,6 @@
 "use client";
 import About from "@/components/layout/About";
+import Blog from "@/components/layout/Blog";
 import Features from "@/components/layout/Features";
 import Services from "@/components/layout/Services";
 import Testimonial from "@/components/layout/Testimonial";
@@ -84,6 +85,9 @@ export default function Home() {
 
       {/* Testimonials Section */}
       <Testimonial/>
+
+      {/* Blog Section */}
+      <Blog/>
     </main>
   );
 }

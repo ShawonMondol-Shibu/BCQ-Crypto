@@ -17,3 +17,10 @@ export interface testimonialType{
   title:string;
   desc:string;
 }
+
+export interface blogType {
+  image:string;
+  title:string;
+  desc:string;
+  url:string;
+}
