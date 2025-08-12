@@ -20,7 +20,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className=" xl:container w-full  m-auto px-5">
+    <main className=" xl:container w-full  m-auto px-5 scroll-smooth">
       <header className="flex xl:flex-nowrap flex-wrap-reverse items-center justify-center lg:gap-20 gap-10">
         <section className="w-2xl flex-2/5 space-y-4 m-auto">
           <p className="font-semibold text-orange-400 text-base">
