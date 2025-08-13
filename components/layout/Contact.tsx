@@ -20,11 +20,11 @@ import { toast, Toaster } from "sonner";
 
 const formSchema = z.object({
   username: z.string().min(2, {
-    message: "Username must be at least 2 characters.",
+    message: "Name must be at least 2 characters.",
   }),
-  email: z.email().min(2, {
+  email: z.email({
     message: "Please enter a valid email address",
-  }),
+  }).min(2),
   message: z.string().min(2, {
     message: "Write you text here.",
   }),
