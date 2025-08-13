@@ -51,7 +51,7 @@ export default function Contact() {
         Get in touch
       </h2>
       <div className="m-auto mt-10 md:w-lg w-96">
-        <Toaster richColors />
+        <Toaster richColors/>
         <Form {...form}>
           <form
             onSubmit={form.handleSubmit(onSubmit)}
