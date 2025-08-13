@@ -22,12 +22,12 @@ const formSchema = z.object({
   username: z.string().min(2, {
     message: "Username must be at least 2 characters.",
   }),
-  email:z.email().min(2,{
-    message: "Please enter a valid email address"
+  email: z.email().min(2, {
+    message: "Please enter a valid email address",
   }),
-message:z.string().min(2,{
-  message:"Write you text here."
-})
+  message: z.string().min(2, {
+    message: "Write you text here.",
+  }),
 });
 
 export default function Contact() {
@@ -35,7 +35,7 @@ export default function Contact() {
     resolver: zodResolver(formSchema),
     defaultValues: {
       username: "",
-      email:"",
+      email: "",
       message: "",
     },
   });
@@ -43,7 +43,7 @@ export default function Contact() {
   function onSubmit() {
     // Do something with the form values.
     // ✅ This will be type-safe and validated.
-    return toast.success("Message send successfully ")
+    return toast.success("Message send successfully ");
   }
   return (
     <main className="my-40">
@@ -51,9 +51,12 @@ export default function Contact() {
         Get in touch
       </h2>
       <div className="m-auto mt-10 md:w-lg w-96">
-        <Toaster richColors/>
+        <Toaster richColors />
         <Form {...form}>
-          <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8 grid">
+          <form
+            onSubmit={form.handleSubmit(onSubmit)}
+            className="space-y-8 grid"
+          >
             <FormField
               control={form.control}
               name="username"
@@ -89,12 +92,19 @@ export default function Contact() {
                   <FormControl>
                     <Textarea placeholder="Write your message" {...field} />
                   </FormControl>
-                
+
                   <FormMessage />
                 </FormItem>
               )}
             />
-            <Button variant={'default'} size={'lg'} type="submit" className="hover:cursor-pointer">Send message</Button>
+            <Button
+              variant={"default"}
+              size={"lg"}
+              type="submit"
+              className="hover:cursor-pointer"
+            >
+              Send message
+            </Button>
           </form>
         </Form>
       </div>

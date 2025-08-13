@@ -37,11 +37,16 @@ export default function Testimonial() {
 
   return (
     <main className="bg-primary p-14 rounded-3xl space-y-8">
-      <h2 className="md:text-5xl text-3xl font-bold text-zinc-50">The Easiest and Most </h2>
+      <h2 className="md:text-5xl text-3xl font-bold text-zinc-50">
+        The Easiest and Most{" "}
+      </h2>
       <Carousel className="my-10">
         <CarouselContent className="mb-10">
           {testimonials.map((item: testimonialType, i: number) => (
-            <CarouselItem key={i} className="lg:basis-1/2 basis-full text-center">
+            <CarouselItem
+              key={i}
+              className="lg:basis-1/2 basis-full text-center"
+            >
               <Card>
                 <CardContent className="space-y-6">
                   <div className="flex items-center gap-4 m-auto w-fit">

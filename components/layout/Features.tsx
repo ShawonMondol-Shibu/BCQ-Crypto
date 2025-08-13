@@ -24,7 +24,9 @@ export default function Features() {
               The Easiest and Most Powerful Crypto Wallet
             </h3>
             <p className="lg:text-base text-sm font-normal text-zinc-500">
-              Bitcoin uses peer-to-peer technology to operate with no central authority or banks; managing transactions and the issuing of bitcoins is carried out collectively by the network. 
+              Bitcoin uses peer-to-peer technology to operate with no central
+              authority or banks; managing transactions and the issuing of
+              bitcoins is carried out collectively by the network.
             </p>
 
             <Button variant={"default"} size={"lg"}>

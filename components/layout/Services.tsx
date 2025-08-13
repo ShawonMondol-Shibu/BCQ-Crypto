@@ -30,7 +30,7 @@ export default function Services() {
   ];
   return (
     <main className="grid xl:grid-cols-2  items-center justify-center gap-20 m-auto my-20">
-      <section className="space-y-8 md:w-lg m-auto md:text-justify text-center" >
+      <section className="space-y-8 md:w-lg m-auto md:text-justify text-center">
         <h3 className="lg:text-5xl text-3xl font-bold text-zinc-800 text-wrap">
           We make crypto easy.
         </h3>
