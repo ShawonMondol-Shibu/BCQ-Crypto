@@ -22,9 +22,11 @@ const formSchema = z.object({
   username: z.string().min(2, {
     message: "Name must be at least 2 characters.",
   }),
-  email: z.email({
-    message: "Please enter a valid email address",
-  }).min(2),
+  email: z
+    .email({
+      message: "Please enter a valid email address",
+    })
+    .min(2),
   message: z.string().min(2, {
     message: "Write you text here.",
   }),
@@ -41,8 +43,6 @@ export default function Contact() {
   });
 
   function onSubmit() {
-    // Do something with the form values.
-    // ✅ This will be type-safe and validated.
     return toast.success("Message send successfully ");
   }
   return (
