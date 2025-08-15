@@ -14,10 +14,9 @@ import { dataType } from "@/public/data";
 export default function Page() {
   const { user } = useContext(AppContext);
  const handleClick = ()=>{
-    const idArr = ['hello', 'world']
-    idArr.push()
-    // const strId = idArr.push(e.target.id)
-    localStorage.setItem('cart',JSON.stringify(idArr))
+    const idArr = []
+    const cartId = idArr.push(e.target.id)
+    localStorage.setItem('cart',JSON.stringify(cartId))
  }
 
   return (
